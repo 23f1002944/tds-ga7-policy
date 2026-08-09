@@ -35,7 +35,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
 
       - name: Unit tests for the release-gate policy
-        run: node --test "test/**/*.test.js"
+        run: node --test test/policy.test.js
 
       - name: End-to-end probe of POST /release-gate
         run: node scripts/e2e.mjs

@@ -7,7 +7,7 @@
   "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js",
-    "test": "node --test \"test/**/*.test.js\"",
+    "test": "node --test test/policy.test.js",
     "e2e": "node scripts/e2e.mjs",
     "deploy": "wrangler deploy"
   },

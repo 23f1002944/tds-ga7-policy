@@ -18,7 +18,7 @@ so the same payload always produces the same answer.
 
 ```bash
 npm start                      # Node, defaults to :8787
-node --test "test/**/*.test.js" # 37 unit tests
+node --test test/policy.test.js  # 37 unit tests
 node scripts/e2e.mjs           # boots the server and probes it over HTTP
 npx wrangler deploy            # Cloudflare Workers (src/worker.js)
 ```
