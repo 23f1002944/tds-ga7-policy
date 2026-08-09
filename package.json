@@ -1,0 +1,20 @@
+{
+  "name": "tds-ga7-policy",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "TDS 2026 May GA7 — deterministic CI/CD, LLM-firewall, IaC and OSINT policy endpoints",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test \"test/**/*.test.js\"",
+    "e2e": "node scripts/e2e.mjs",
+    "deploy": "wrangler deploy"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "wrangler": "^4.42.0"
+  }
+}
